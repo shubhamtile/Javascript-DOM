@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <div class="one" id="demo">
+    <div class="first">Jan</div>
+    <div class="first">Feb</div>
+    <div class="first">Mar</div>
+    <div class="first">Apr</div>
+  </div>
+
+  <script>
+    const temp = document.querySelector('.one')
+    // console.log(temp);
+    // console.log(temp.children);
+    // console.log(temp.childElementCount);
+
+    // for (let i = 0; i < temp.children.length; i++) {
+    //   console.log(temp.children[i].innerHTML);
+      
+    // }
+
+    temp.children[1].style.color = 'tomato'
+    // 
+    
+    
+    console.log(temp.childNodes);
+
+  </script>
+</body>
+</html>

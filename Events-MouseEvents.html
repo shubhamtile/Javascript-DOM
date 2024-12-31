@@ -1,0 +1,33 @@
+<!-- Mouse Events:
+1. click : onclick -> when mouse click on an element
+2. mouseover : onmouseover -> when the cursor of the mouse comes over the elements
+3. mouseout : onmouseout -> when the cusrsor of the mouse leaves an element
+4. mousedown : onmousedown -> when the mouse button is pressed over the element
+5. mopuseup : onmouseup -> when the mouse button is released over the element`
+6. mousemove : onmousemove -> when the mouse movement takes place
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 onmousedown="alert('Hello')">JavaScipt Events</h1>
+    <ul class="one">
+        <li id="a">Apple</li>
+        <li id="b">Banana</li>
+        <li id="m">Mango</li>
+        <li id="o">Orange</li>
+    </ul>
+</body>
+<script>
+    // document.getElementById('m').onclick = function(){
+    //     alert('Clicked done')
+    // }
+
+    document.getElementById('m').addEventListener('mouseover', function(){
+        alert('Clicked done again')
+    })
+</script>
+</html>

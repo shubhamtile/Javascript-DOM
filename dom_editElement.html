@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to Pune</h1>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+    </ul>
+</body>
+<script>
+    let temp = document.querySelector('h1')
+    temp.innerHTML = 'Welcome to Nashik'
+    temp.outerHTML = '<h1 style="color : tomato">Welcome to Mumbai</h1>'
+
+    let str = document.querySelector('li:last-child')
+    console.log(str);
+
+    str.remove()
+</script>
+</html>

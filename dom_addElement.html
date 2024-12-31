@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <ul class="one">
+        <li>Apple</li>   
+    </ul>
+
+    
+</body>
+<script>
+    function addFruit(fruit) {
+        let list = document.createElement('li')
+        list.innerHTML = `${fruit}`
+        document.querySelector('.one').appendChild(list)
+    }
+    addFruit('Banana')
+    addFruit('Orange')
+
+    function addFruitOptimize(fruit)
+    {
+        let list = document.createElement('li')
+        list.appendChild(document.createTextNode(fruit))
+        document.querySelector('.one').appendChild(list)
+
+    }
+    addFruitOptimize('Mango')
+
+    let edit = document.querySelector("li:nth-child(2)")
+    edit.innerHTML = 'Guava'
+
+</script>
+
+</html>
